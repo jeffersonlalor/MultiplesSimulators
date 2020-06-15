@@ -143,8 +143,8 @@
 			inputFileListPaths = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/multipleSimulatorsStartup.sh",
-				"$(SRCROOT)/multipleSimulators.config",
+				"$(SRCROOT)/.../multipleSimulatorsStartup.sh",
+				"$(SRCROOT)/.../multipleSimulators.config",
 			);
 			outputFileListPaths = (
 			);
@@ -152,7 +152,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncustom_sim=`xcrun simctl list | grep \"Multiple Simulators\" | awk -F\"[()]\" '{print $2}'`\nif [ ! -z “${custom_sim}” ] && [ “${TARGET_DEVICE_IDENTIFIER}” = “${custom_sim}” ]; then\n/bin/sh multipleSimulatorsStartup.sh &\nfi\n";
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncustom_sim=`xcrun simctl list | grep \"Multiple Simulators\" | awk -F\"[()]\" '{print $2}'`\nif [ ! -z “${custom_sim}” ] && [ “${TARGET_DEVICE_IDENTIFIER}” = “${custom_sim}” ]; then\n/bin/sh Scripts/multipleSimulatorsStartup.sh &\nfi\n";
 		};
 /* End PBXShellScriptBuildPhase section */
 

@@ -10,7 +10,7 @@ installAndLaunch() {
 }
 
 # parses the configuration file
-source ./multipleSimulators.config
+source ./Scripts/multipleSimulators.config
 path=$(find $app_location -name MultiplesSimulators.app | head -n 1)
 
 # iterates over the simulators list and start installation / launching process
